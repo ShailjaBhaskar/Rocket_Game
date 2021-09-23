@@ -1,0 +1,181 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	overflow: hidden;
+	background-color: #AC82FF;
+	color: white;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 2px;
+	text-shadow: 2px 2px #000000;
+}
+h4{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+hr{
+
+    border: 4;
+    border-top: 3px solid rgba(4,0,0,.1);
+}
+
+#score{
+	text-align: center;
+	width: 80px;
+	height: 20px;
+	margin: auto;
+	border:2px solid white;
+	background-color: #ffc413;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	text-shadow: 1px 1px #000000;
+	box-shadow: 1px 3px #888888;
+	border-radius: 5px
+}
+
+ #play{
+	margin-left: 590px;
+	margin-top:0px;
+	margin-bottom: 0px;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+.edit{ 
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	margin: auto;
+	border:2px solid white;
+	background-color: #ffc413;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: white;
+	text-shadow: 1px 1px #000000;
+	font-size: 18px;
+	box-shadow: 1px 3px #888888;
+	border-radius:5px;
+}
+
+#game{
+	width: 300px;
+	height: 500px;
+	border:1px solid black;
+	margin:auto;
+	overflow: hidden;
+	background: #1d1135;
+}
+
+#character{
+	width: 100px;
+	height: 100px;
+	position:relative;
+	top:300px;
+	left:100px;
+}
+
+#character img{
+	width: 150px;
+	height: 150px;
+}
+
+.over{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    left: 0px;
+    top: 100px;
+    display: none;
+}
+
+.block{
+	width:100px;
+	height:100px;
+    position: relative;
+    top:500px;
+    animation: slide 2s infinite;
+}
+
+.block img{
+	width:150px;
+	height:150px;
+}
+
+@keyframes slide{
+	0%{top:-100px};
+	100%{top:500px};
+}
+
+#left,#right{
+	width:50%;
+	position: absolute;
+	height: 500px;
+}
+#right{
+	left: 50%;
+}
+
+.bubbles img{
+ 	width: 50px;
+ 	animation: bubble 7s linear infinite;
+
+ }
+
+ .bubbles{
+ 	width: 300px;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: space-around;
+ 	position: absolute;
+ 	bottom: -70px;
+
+ }
+ @keyframes bubble{
+ 	0%{
+ 		transform: translateY(-80vh);
+ 		opacity: 0;
+
+ 	}
+ 	50%{
+ 		opacity: 1;
+
+ 	}
+ 	70%{
+ 		opacity: 0;
+
+ 	}
+ 	100%{
+ 		transform: translateY(0);
+ 		opacity: 0;
+
+ 	}
+ }
+
+ .bubbles img:nth-child(1){
+ 	animation-delay: 2s;
+ 	width: 60px;
+ }
+ .bubbles img:nth-child(2){
+ 	animation-delay: 1s;
+ 	width: 25px;
+ }
+ .bubbles img:nth-child(3){
+ 	animation-delay: 3s;
+ 	width: 70px;
+ }
+ .bubbles img:nth-child(4){
+ 	animation-delay: 4.5s;
+ 	width: 35px;
+ }
+ .bubbles img:nth-child(5){
+ 	animation-delay: 2s;
+ 	width: 50px;
+ }
